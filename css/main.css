@@ -1,0 +1,254 @@
+/* jnottery.com (c) Tomasz Zduńczyk <tomasz@zdunczyk.org> */
+
+.note-marker {
+    position: absolute;
+    background: url(../images/appbar.star.svg);
+    background-size: 100% 100%;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+body {
+    background-color: #23241f;
+    font-family: 'Ropa Sans', sans-serif; 
+    font-size: 14pt;
+}
+
+a {
+    text-decoration: underline;
+    font-weight: 700;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:hover {
+    opacity: 0.8;
+    color: inherit;
+}
+
+.green-row .tt-selection {
+    background-color: white;
+    color: #4E4E4E;
+}
+
+.gray-row, .rev-gray-row, .tt-selection {
+    background-color: #16A085;
+    color: white; 
+}
+
+
+.plus-tt {
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+.plus-tt:hover {
+    opacity: 1.0;
+}
+
+.fugaz, h2, .small-header {
+    font-family: 'Fugaz One', cursive;
+}
+
+.small-header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+pre {
+    margin-bottom: 50px;
+}
+
+code {
+    color: #DD1144;
+    border: 1px solid #DCDCDC;
+}
+
+pre code, code {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 16px;
+}
+
+.cnter {
+    font-size: 30px;
+    color: #aaaaaa;
+}
+
+.title {
+    font-size: 140px;
+    display: inline-block;
+}
+
+.title-block {
+    float: right;
+}
+
+.download-btn {
+    font-size: 20px;
+    display: block;
+}
+
+.download-block {
+    float: right; 
+    clear: right;
+    margin-top: 10px;
+    padding-left: 70px;
+    background: url(../images/appbar.download.svg) no-repeat;
+    background-position: left top;
+}
+
+.info-bar {
+    width: 100%; 
+    height: 35px;
+    background-color: #4e4e4e; 
+    color: white; 
+    padding: 5px;
+    display: none;
+}
+
+.info-close {
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.version {
+    position: absolute;
+    left: 300px;
+    top: 150px;
+    color: #c0392b; 
+    font-size: 24px; 
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin-top: -30px;
+}
+
+.gray-row, .green-row, .rev-gray-row {
+    overflow-y: auto;
+}
+
+.gray-row > .row, .green-row > .row, .rev-gray-row > .row {
+    width: 960px;
+}
+
+.col-xs-4, .col-xs-6, .col-xs-8 {
+    padding-bottom: 30px;
+}
+
+.gray-row {
+    background: url(../images/gray-row.png) center top repeat-y;
+    color: #4e4e4e;
+}
+
+.rev-gray-row {
+    background: url(../images/dark-gray-row.png) center top repeat-y;
+    color: #4e4e4e;
+}
+
+.green-row {
+    background: url(../images/green-row.png) center top repeat-y;
+    color: #efefef;
+}
+
+.green-row, .footer {
+    color: #efefef;
+}
+
+.gray-row, .gray-row .col-xs-8, .rev-gray-row .col-xs-4 {
+    background-color: #efefef;
+}
+
+.gray-row .col-xs-4, .rev-gray-row, .rev-gray-row .col-xs-8 {
+    background-color: #e5e5e5;  
+}
+
+.green-row, .green-row .col-xs-8 {
+    background-color: #16a085;
+}
+
+.green-row .col-xs-4 {
+    background-color: #148f76;
+}
+
+.row {
+    padding: 0px !important;
+}
+
+.footer .contact {
+    float: left;
+    font-size: 24px;
+}
+
+.footer {
+    max-width: 960px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer .copy {
+    float: right;
+    font-size: 11px;
+}
+
+.mindmap-icon {
+    width: 200px;
+    height: 200px;
+}
+
+.mindmap-text {
+    text-align: center;
+    font-size: 14px;
+}
+
+.small-column {
+    font-size: 14px;
+}
+
+.mindmap-arrow {
+    position: absolute; 
+    top: 70px; 
+    z-index: 1; 
+    background: url(../images/appbar.arrow.right.svg);
+    width: 80px;
+    height: 80px;
+}
+
+.mindmap-arrow-1 {
+    left: 280px; 
+}
+
+.mindmap-arrow-2 {
+    left: 600px; 
+}
+
+.octocat-icon {
+    width: 256px;
+    height: 256px;
+}
+
+.mindmap-icon, .octocat-icon {
+    margin-top: 10px;
+}
+
+.whatnext-row {
+    min-height: 300px;
+}
+
+.contact img {
+    width: 60px;
+    height: 60px;
+}
+
+.github-ribbon img {
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    border: 0;
+}

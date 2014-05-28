@@ -1,0 +1,346 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="jNottery is a jQuery plugin that lets you add notes and markers to webpages. All the data is encoded as a part of an URL which makes it easy to share or save." name="description"/>
+        <meta content="jNottery, note, notes, notice, mark, marker, take notes, mark on page, private comments, library, plugin, jQuery" name="keywords"/>
+        <title>jNottery - private notes on your website</title>
+        <link href="images/logo.png" type="image/png" rel="shortcut icon">
+        <link href="http://fonts.googleapis.com/css?family=Fugaz+One|Ropa+Sans|Ubuntu+Mono" rel="stylesheet" type="text/css">
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <link href="code/jnottery-v0.1.0-pa.css" rel="stylesheet">
+        <link href="css/monokai_sublime.css" rel="stylesheet"> 
+    </head>
+    <body>
+        <div class="main">
+            <div class="info-bar text-center">
+                There are <span class="note-cnt"></span> notes found on this page! 
+                Click on the &#9733;'s to check them out! 
+                <span class="info-close">&#10006;</span>
+            </div>
+            <div class="gray-row main-row-wrapper">
+                <div class="center-block row main-row">
+                    <div class="col-xs-8 main-col">
+                        <div class="col-content">
+                            <div class="title-block">
+                                <div class="title fugaz">jNo</div>
+                                <img src="images/logo.png" class="logo"/>
+                            </div>
+                            <div class="version fugaz">pre-alpha</div>
+                            <div class="download-block">
+                                Download latest version:
+                                <a href="code/jnottery-full-v0.1.0-pa.zip" class="download-btn">
+                                    jnottery-full-v0.1.0-pa.zip
+                                </a>
+                                <a href="code/jnottery-full-v0.1.0-pa.tar.gz" class="download-btn">
+                                    jnottery-full-v0.1.0-pa.tar.gz
+                                </a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-xs-4 main-col">
+                        <div class="col-content">
+                            <div class="title fugaz">ery</div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="green-row main-row-wrapper">
+                <div class="center-block row main-row">
+                    <div class="col-xs-8 main-col">
+                        <div class="col-content">
+                            <div class="mindmap-arrow mindmap-arrow-1"></div>
+                            <div class="mindmap-arrow mindmap-arrow-2"></div>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <div class="text-center">
+                                        <img class="mindmap-icon" src="images/appbar.clipboard.variant.edit.svg"/>
+                                    </div>
+                                    <div class="selectable">
+                                        <div class="fugaz text-center">Write a notte</div>
+                                        <div class="mindmap-text">
+                                            Write a note for specific
+                                            element of a webpage (e.g image,
+                                            or last paragraph of an article).
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="col-xs-6">
+                                    <div class="text-center">
+                                        <img class="mindmap-icon" src="images/appbar.notification.star.svg"/>
+                                    </div>
+                                    <div class="selectable">
+                                        <div class="fugaz text-center">Store it in URL</div>
+                                        <div class="mindmap-text">
+                                            jNottery will encode and save your 
+                                            note as part of the URL! 
+                                            Whoever will visit this link will 
+                                            be greeted with your notes.
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-xs-4 main-col">
+                        <div class="col-content">
+                            <div class="text-center">
+                                <img class="mindmap-icon" src="images/appbar.group.svg"/>
+                            </div>
+                            <div class="selectable">
+                                <div class="fugaz text-center">Share or save</div>
+                                <div class="mindmap-text">
+                                    Pass the generated link to friends, save it in
+                                    browser as bookmark, or post on your blog. 
+                                    Remember: your notes are always there!
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="rev-gray-row main-row-wrapper">
+                <div class="center-block row main-row">
+                    <div class="col-xs-8 main-col">
+                        <div class="col-content selectable">
+                            <h2>About</h2>
+                             <p>
+                                Have you ever taken a screenshot of a webpage and 
+                                used graphics program to mark some important 
+                                things on it? Or sent your friend a link and 
+                                instructed him to "Go to the bottom of the page", 
+                                or "Check third paragraph in the left column" . 
+                                Wasn't it cumbersome and inefficient? jNottery is 
+                                here to help users with sharing and managing content 
+                                of your website more effctively! The library's 
+                                workflow is fairly straightforward. Whenever you
+                                (or your client) add a note to any supported 
+                                part of a website it will be encoded and saved 
+                                directly to the URL. Afterwards, anyone can 
+                                deal with this link as with any other, except that 
+                                after visiting it, all your notes will show up. 
+                             </p>
+                             <p>
+                                To give it a try click on an image on this webpage, 
+                                or select some part of the text and use 
+                                <span class="fugaz">+tt</span> button in the 
+                                upper-left corner of the current text block. There 
+                                appear a tooltip with textarea which allows 
+                                you to add a note.
+                             </p>
+                             <p>
+                                 For more developer specific info check 
+                                 <span class="fugaz">Quick start</span> section 
+                                 and the project's readme file.
+                             </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 main-col">
+                        <div class="col-content selectable">
+                            <div class="small-header">When use it?</div>
+                            <ul class="small-column">
+                                <li>
+                                    when you maintaining website with a lot of 
+                                    text and images, which users comment on
+                                </li>
+                                <li>
+                                    when you're looking for effective way to 
+                                    encourage users to bookmark and share link to
+                                    your page
+                                </li> 
+                                <li>
+                                    in early stages of website development when 
+                                    you need to exchange a lot of information 
+                                    about the look and structure of your webapp 
+                                    with clients
+                                </li>
+                                <li>
+                                    it's great for any type of content sharing: 
+                                    scores in online games, markers on maps, 
+                                    values of forms etc.
+                                </li>
+                            </ul>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="gray-row main-row-wrapper">
+                <div class="center-block row main-row">
+                    <div class="col-xs-8 main-col">
+                        <div class="col-content selectable">
+                        <h2>Quick start</h2>
+                        <p>
+                            It's rather simple to get started with jNottery.
+                            If you know jQuery you will feel like at home, otherwise 
+                            it shouldn't take more than few minutes to figure out 
+                            how to use it. The main function <code>tt()</code> is 
+                            a generic wrapper for <code>jQuery()</code> and also 
+                            a namespace for the whole library. It takes the same 
+                            arguments as jQuery function (e.g a string indicating 
+                            css selector or a jQuery object), as well as library's 
+                            internal types such as <code>tt.core.Note</code> or 
+                            special jQuery object returned from 
+                            <code>tt().selection()</code>. Here I will show you how 
+                            to enable <code>ElementNotes</code> for all images on 
+                            a website, in 3 easy steps:
+                        </p>
+                   
+                        <p><span class="cnter">1.</span> 
+                            Include latest 
+                            <a href="http://code.jquery.com/" target="_blank">jQuery</a> and
+                            jNottery files downloaded as an archive from this page. There 
+                            is nothing special about it, except the doctype declaration which 
+                            is required by some browsers for proper calculation of window's 
+                            boundaries. 
+                        </p> 
+               
+<pre><code>&lt;!doctype html&gt;
+&lt;!-- ... --&gt
+&lt;head&gt
+&lt;link rel="stylesheet" href="path/to/unzipped/jnottery-v0.1.0-pa.css"&gt;
+&lt;!-- ... some more html here --&gt
+&lt;script src="https://code.jquery.com/jquery-1.11.0.min.js"&gt;&lt;/script&gt;
+&lt;script src="path/to/unzipped/jnottery-full-v0.1.0-pa.min.js"&gt;&lt;/script&gt;
+&lt;/body&gt;</code></pre>
+                        <p><span class="cnter">2.</span>
+                            Now it's time to initialize the library. Pass the root of your 
+                            document to the <code>tt</code> function and run <code>.init()</code>. 
+                            It's rather common to use simply <code>document.body</code> here. 
+                            The <code>onElementNote</code> callback is called for each element 
+                            note found in the URL, when <code>document.ready</code> event is
+                            propagated. The init function may optionaly handle initialization of 
+                            <code>tt.vendor</code> submodule, but only when you specify proper 
+                            Bitly credentials. Please 
+                            <a href="http://dev.bitly.com/authentication.html" target="_blank"> 
+                            get the access token</a> and add it to your code. It will allow you 
+                            to test content sharing options. To give user an idea about 
+                            which elements has notes assigned, we will add garish border to 
+                            all of them. 
+                        </p> 
+<pre><code>function highlight(note) {
+    // note is an instance of tt.core.ElementNote
+    tt(note).css('border', '2px solid red'); 
+}
+
+$(function() {
+    // when document.ready was fired..
+
+    tt(document.body).init({
+        vendor: {
+            bitly: {
+                // your bitly token goes here
+                access_token: 'your_bitly_token'
+            }
+        },   
+        onElementNote: highlight 
+	});
+});</code></pre>
+                        <p><span class="cnter">3.</span> 
+                            The last step is to decide when the tooltip will be 
+                            shown up. Let's do it simply after clicking on the 
+                            target image. The library's tooltip works in two ways. 
+                            When it finds any notes assigned to the element it 
+                            opens them for preview, or edit. In other case the 
+                            tooltip's input will be empty and ready for your new 
+                            content. The <code>new.note.tt</code> event means that 
+                            new note has been just added. We will highlight its 
+                            target element as well to keep our interface more 
+                            consistent.
+                        </p> 
+
+<pre><code>$(function() {
+    $('img').click(function() {
+        var tooltip = tt(this).tooltip({
+            // position could be 'top', 'left', 'right' or 'bottom'
+            position: 'auto', 
+            view: {
+                // title of the tooltip
+                title: 'Add note to image'
+            }
+        });
+
+        tooltip.on(
+            // event fired when user adds a new note
+            'new.note.tt': function(e, tooltip_obj, note) {
+                highlight(note);
+            }
+        );
+    });
+});</code></pre>
+                    <p>
+                        You're ready to merge all the code presented above into 
+                        a working app. Of course before playing with it make sure 
+                        you've added some images to your page! Check my sample demo 
+                        <a href="http://jnottery.com/demo" target="_blank">here.</a>
+                    </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 main-col">
+                        <div class="col-content selectable">
+                            <div class="small-header">Technology</div>
+                            <div class="small-column">
+                                This project uses some amazing third-party plugins 
+                                and libraries. You should definitely try them:
+                                <ul>
+                                    <li>0xJQ (<a href="https://github.com/zdunczyk/0xJQ" target="_blank">zdunczyk/0xJQ</a>)</li>
+                                    <li>js-base64 (<a href="https://github.com/dankogai/js-base64" target="_blank">dankogai/js-base64</a>)</li>
+                                    <li>nano (<a href="https://github.com/trix/nano" target="_blank">trix/nano</a>) </li>
+                                    <li>rangy (<a href="https://code.google.com/p/rangy/" target="_blank">code.google.com/p/rangy/</a>) </li>
+                                    <li>rayson (<a href="https://github.com/zdunczyk/rayson" target="_blank">zdunczyk/rayson</a>)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="green-row main-row-wrapper">
+                <div class="center-block row main-row">
+                    <div class="col-xs-8 whatnext-row main-col">
+                        <div class="col-content selectable">
+                            <h2>What next?</h2>
+                            <p>
+                                This library is still work in progress, if you like 
+                                it let me know by 
+                                <a href="https://github.com/zdunczyk/jnottery" target="_blank">
+                                staring</a> the project on Github. Found bugs can 
+                                be reported 
+                                <a href="https://github.com/zdunczyk/jnottery/issues" target="_blank">
+                                here</a>. It's open source and permissive licensed 
+                                so don't hesitate to dig into the code and 
+                                <a href="https://help.github.com/articles/using-pull-requests" target="_blank">
+                                send a pull request</a> with your improvements. 
+                                You could also contribute by sending me an email 
+                                with your ideas. All your work will be appreciated. 
+                                Thanks! 😉
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 main-col">
+                        <div class="col-content">
+                            <img class="octocat-icon" src="images/appbar.social.github.octocat.svg"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer center-block">
+                <span class="contact">
+                    <img src="images/appbar.email.minimal.svg"/> <a href="mailto:contact@jnottery.com">contact@jnottery.com</a> 
+                </span>
+                <span class="copy">Copyright 2014 Tomasz Zduńczyk (<a href="https://github.com/zdunczyk" target="_blank">@zdunczyk</a>) <br/>
+                    full code of this website is <a href="https://github.com/zdunczyk/jnottery-com" target="_blank">realased on Github</a> under MIT license, <br/> 
+                    uses <a href="http://modernuiicons.com/" target="_blank">Modern UI Icons</a>
+                </span>
+            </div>
+        </div>
+        <a class="github-ribbon" href="https://github.com/zdunczyk/jnottery"><img src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
+        
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="code/jnottery-full-v0.1.0-pa.min.js"></script>
+        <script src="js/highlight.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

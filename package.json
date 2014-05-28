@@ -1,0 +1,12 @@
+{
+    "name": "jnottery.com",
+    "homepage": "http://jnottery.com/",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/zdunczyk/jnottery-com.git"
+    },
+    "dependencies": {
+    },
+    "author": "Tomasz Zduńczyk",
+    "license": "MIT"
+}
