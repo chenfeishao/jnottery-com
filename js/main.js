@@ -43,6 +43,8 @@
                         .offset({ 
                             top: pos.top - 16, 
                             left: pos.left - 12 
+                        }).css({
+                            position: 'absolute'
                         });
         
         marker.click(function() {
