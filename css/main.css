@@ -252,3 +252,32 @@ pre code, code {
     right: 0; 
     border: 0;
 }
+
+.social-btns {
+    margin-top: 40px;
+}
+
+#___plusone_0 { 
+    width: 60px !important; 
+}
+
+.g-plusone {
+    display: inline-block; 
+    margin-right: 15px;
+}
+
+.like-btn {
+    border: none; 
+    overflow: hidden; 
+    height: 21px; 
+    width: 80px; 
+    display: inline-block;
+}
+
+.social-btns .small-btns {
+    margin-top: 10px; 
+}
+
+.twitter-follow-button {
+    margin-top: 10px;
+}

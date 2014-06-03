@@ -43,6 +43,26 @@
                         <div class="col-content">
                             <div class="title fugaz">ery</div>
                         </div> 
+                        <div class="social-btns">
+                            <iframe width="160" 
+                                    height="30" 
+                                    frameborder="0" 
+                                    scrolling="0" 
+                                    allowtransparency="true" 
+                                    src="http://ghbtns.com/github-btn.html?user=zdunczyk&repo=jnottery&type=watch&count=true&size=large"></iframe>
+    
+                            <div class="small-btns">
+                                <iframe 
+                                    class="like-btn" 
+                                    scrolling="no" 
+                                    frameborder="0" 
+                                    allowTransparency="true" 
+                                    src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fjnottery.com%2F&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21&amp;appId=506925072770416"></iframe>
+                                
+                                <div data-href="http://jnottery.com/" class="g-plusone" data-size="medium"></div>
+                                <a data-url="http://jnottery.com/" href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -262,12 +282,12 @@ $(function() {
             }
         });
 
-        tooltip.on(
+        tooltip.on({
             // event fired when user adds a new note
             'new.note.tt': function(e, tooltip_obj, note) {
                 highlight(note);
             }
-        );
+        });
     });
 });</code></pre>
                     <p>
@@ -316,6 +336,12 @@ $(function() {
                                 with your ideas. All your work will be appreciated. 
                                 Thanks! 😉
                             </p>
+                            <a href="https://twitter.com/jnottery_com" 
+                               class="twitter-follow-button"
+                               data-show-count="false"
+                               data-lang="en" 
+                               data-size="ss"></a>
+
                         </div>
                     </div>
                     <div class="col-xs-4 main-col">
@@ -342,5 +368,10 @@ $(function() {
         <script src="code/jnottery-full-v0.1.0-pa.min.js"></script>
         <script src="js/highlight.min.js"></script>
         <script src="js/main.js"></script>
+
+        <!-- google +1 -->
+        <script type="text/javascript" src="https://apis.google.com/js/platform.js"></script>
+        <!-- twitter -->
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
     </body>
 </html>
